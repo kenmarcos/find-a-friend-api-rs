@@ -18,8 +18,10 @@ model Org {
   name        String
   email       String @unique
   author_name String
+  whatsapp    String
+  password    String
 
-  zip_cod      String
+  zip_code     String
   street       String
   number       String
   state        String
