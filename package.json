@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "test:unit": "vitest run --dir src/services",
+    "test:unit:watch": "vitest --dir src/services"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,12 @@
     "@types/node": "^22.1.0",
     "prisma": "^5.17.0",
     "tsx": "^4.16.5",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^2.0.5"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@prisma/client": "^5.17.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
