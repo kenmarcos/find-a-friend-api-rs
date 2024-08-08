@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "pets" ALTER COLUMN "life_stage" DROP DEFAULT,
+ALTER COLUMN "size" DROP DEFAULT,
+ALTER COLUMN "energy_level" DROP DEFAULT;

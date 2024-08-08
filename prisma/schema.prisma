@@ -30,6 +30,8 @@ model Org {
   latitude     Decimal
   longitude    Decimal
 
+  Pet Pet[]
+
   @@map("orgs")
 }
 
@@ -58,10 +60,13 @@ model Pet {
   name         String
   description  String
   breed        String
-  life_stage   PetLifeStage   @default(PUPPY)
-  size         PetSize        @default(SMALL)
-  energy_level PetEnergyLevel @default(LOW)
+  life_stage   PetLifeStage
+  size         PetSize
+  energy_level PetEnergyLevel
   requirements String[]
+
+  org    Org    @relation(fields: [org_id], references: [id])
+  org_id String
 
   @@map("pets")
 }

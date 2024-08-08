@@ -8,17 +8,7 @@ export class InMemoryOrgsRepository implements OrgsRepository {
   async create(data: Prisma.OrgCreateInput) {
     const org = {
       id: randomUUID(),
-      name: data.name,
-      email: data.email,
-      author_name: data.author_name,
-      whatsapp: data.whatsapp,
-      password: data.password,
-      zip_code: data.zip_code,
-      street: data.street,
-      number: data.number,
-      state: data.state,
-      city: data.city,
-      neighborhood: data.neighborhood,
+      ...data,
       latitude: new Prisma.Decimal(data.latitude.toString()),
       longitude: new Prisma.Decimal(data.longitude.toString()),
     };
@@ -30,6 +20,16 @@ export class InMemoryOrgsRepository implements OrgsRepository {
 
   async findByEmail(email: string) {
     const org = this.items.find((org) => org.email === email);
+
+    if (!org) {
+      return null;
+    }
+
+    return org;
+  }
+
+  async findById(orgId: string) {
+    const org = this.items.find((org) => org.id === orgId);
 
     if (!org) {
       return null;
