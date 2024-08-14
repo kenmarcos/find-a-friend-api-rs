@@ -1,7 +1,5 @@
 import { OrgsRepository } from "@/repositories/orgs.repository";
 import { Pet, PetEnergyLevel, PetLifeStage, PetSize } from "@prisma/client";
-import { OrgAlreadyExistsError } from "../errors/org-already-exists.error";
-import { hash } from "bcryptjs";
 import { PetsRepository } from "@/repositories/pet.repository";
 import { OrgNotFoundError } from "@/errors/org-not-found.error";
 
