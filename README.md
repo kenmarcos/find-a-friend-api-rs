@@ -36,7 +36,7 @@ As funcionalidades dessa aplicação são:
 | ------ | ------------------ | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | POST   | /orgs              | Cria uma ORG                                                                             |                                                                                                     |
 | POST   | /orgs/authenticate | Autentica uma ORG                                                                        |                                                                                                     |
-| POST   | /orgs/pets         | Cadastra um pet                                                                          | UM pet deve estar ligado a uma ORG                                                                  |
+| POST   | /orgs/pets         | Cadastra um pet                                                                          | Um pet deve estar ligado a uma ORG                                                                  |
 | GET    | /orgs/pets         | Lista os pets disponíveis para adoção em uma cidade e filtrados por suas características | Para listar os pets, obrigatoriamente precisamos informar a cidade. Os outros filtros são opcionais |
 | GET    | /orgs/pets/:petId  | Retorna detalhes de um pet para adoção                                                   |                                                                                                     |
 
