@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.9.1",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22.1.0",
     "prisma": "^5.17.0",
+    "prisma-erd-generator": "^1.11.2",
     "tsx": "^4.16.5",
     "typescript": "^5.5.4",
     "vite-tsconfig-paths": "^4.3.2",
