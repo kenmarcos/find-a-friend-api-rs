@@ -28,7 +28,7 @@ export const authenticateOrgController = async (
       }
     );
 
-    return reply.status(201).send({ token });
+    return reply.send({ token });
   } catch (error) {
     if (error instanceof InvalidCredentialsError) {
       return reply.status(400).send({ message: error.message });
