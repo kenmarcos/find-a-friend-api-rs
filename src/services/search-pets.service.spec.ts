@@ -1,9 +1,9 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { InMemoryPetsRepository } from "@/repositories/in-memory/in-memory-pet.repository";
-import { makePet } from "@/tests/make-pet.factory";
+import { makePet } from "@/tests/factories/make-pet.factory";
 import { SearchPetsService } from "./search-pets.service";
 import { InMemoryOrgsRepository } from "@/repositories/in-memory/in-memory-orgs.repository";
-import { makeOrg } from "@/tests/make-org.factory";
+import { makeOrg } from "@/tests/factories/make-org.factory";
 
 let orgsRepository: InMemoryOrgsRepository;
 let petsRepository: InMemoryPetsRepository;

@@ -1,7 +1,7 @@
 import { InMemoryOrgsRepository } from "@/repositories/in-memory/in-memory-orgs.repository";
 import { beforeEach, describe, expect, it } from "vitest";
 import { CreateOrgService } from "./create-org.service";
-import { makeOrg } from "@/tests/make-org.factory";
+import { makeOrg } from "@/tests/factories/make-org.factory";
 import { OrgAlreadyExistsError } from "@/errors/org-already-exists.error";
 import { compare } from "bcryptjs";
 

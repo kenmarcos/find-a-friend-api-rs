@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { InMemoryPetsRepository } from "@/repositories/in-memory/in-memory-pet.repository";
-import { makePet } from "@/tests/make-pet.factory";
+import { makePet } from "@/tests/factories/make-pet.factory";
 import { GetPetService } from "./get-pet.service";
 import { PetNotFoundError } from "@/errors/pet-not-found.error";
 
