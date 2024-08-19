@@ -1,7 +1,7 @@
 import { app } from "@/app";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import request from "supertest";
-import { makeOrg } from "@/tests/make-org.factory";
+import { makeOrg } from "@/tests/factories/make-org.factory";
 
 describe("Create Org (e2e)", () => {
   beforeAll(async () => {
